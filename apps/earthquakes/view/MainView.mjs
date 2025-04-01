@@ -1,7 +1,7 @@
 import Container           from '../../../node_modules/neo.mjs/src/container/Base.mjs';
 import Controller          from './MainViewController.mjs';
 import EarthquakesTable    from './earthquakes/Table.mjs';
-import GoogleMapsComponent from '../../../node_modules/neo.mjs/src/component/wrapper/GoogleMaps.mjs';
+import GoogleMapsComponent from '../../../src/component/wrapper/GoogleMaps.mjs';
 import MainStateProvider   from './MainStateProvider.mjs';
 
 class MainView extends Container {
@@ -16,6 +16,9 @@ class MainView extends Container {
         layout: { ntype: 'vbox', align: 'stretch' },
         items: [{
             module: GoogleMapsComponent,
+            bind: {
+                markerStore: 'stores.earthquakes'
+            },
             flex: 1,
             center: {
                 lat: 64.8014187,
