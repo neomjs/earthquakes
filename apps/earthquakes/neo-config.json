@@ -1,10 +1,10 @@
 {
-    "appPath": "../../apps/earthquakes/app.mjs",
-    "basePath": "../../",
-    "environment": "development",
-    "mainPath": "../node_modules/neo.mjs/src/Main.mjs",
-    "themes": [
-        "neo-theme-light"
-    ],
-    "workerBasePath": "../../node_modules/neo.mjs/src/worker/"
+    "appPath"         : "../../apps/earthquakes/app.mjs",
+    "basePath"        : "../../",
+    "environment"     : "development",
+    "googleMapsApiKey": "AIzaSyD4Y2xvl9mGT8HiVvQiZluT5gah3OIveCE",
+    "mainPath"        : "../node_modules/neo.mjs/src/Main.mjs",
+    "mainThreadAddons": ["DragDrop", "GoogleMaps", "Navigator", "Stylesheet"],
+    "themes"          : ["neo-theme-light"],
+    "workerBasePath"  : "../../node_modules/neo.mjs/src/worker/"
 }
